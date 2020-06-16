@@ -1,0 +1,151 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "第一章引论", "第一章引论\第一章引论.csproj", "{09FE3721-FADE-404D-A3B1-C31808226F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "第二章算法分析", "第二章算法分析\第二章算法分析.csproj", "{5AD8E83E-2C3C-42A4-ADB1-0CB1E4758FC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "基本数据结构", "基本数据结构\基本数据结构.csproj", "{C6B903DD-39A6-49B4-98E7-E54C4DACBAC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "临时测试", "临时测试\临时测试.csproj", "{810AFF4F-BBDF-4185-BE51-508968D3F19C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "排序", "排序\排序.csproj", "{C5A9F803-2C4E-47D1-A892-399F3763DAE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "二分查找", "二分查找\二分查找.csproj", "{9900DE0E-5F15-48D7-85F7-28103567D4EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "图遍历", "图遍历\图遍历.csproj", "{DFA66E36-4BBC-43F2-80CF-5FF818F34B36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "哈希表", "哈希表\哈希表.csproj", "{F4AC3A16-273F-4DDE-B253-7168F0DE6F09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "字符串匹配", "字符串匹配\字符串匹配.csproj", "{65DD8B0F-5F44-4138-B463-2B4A0A19E94F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "贪心算法", "贪心算法\贪心算法.csproj", "{04601B1D-EA7E-4035-94E9-33444E89BB55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "回溯算法", "回溯算法\回溯算法.csproj", "{317B7E86-3D15-40BC-ACD0-86A1585B3A02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "动态规划算法", "动态规划算法\动态规划算法.csproj", "{EEC27161-E4D2-4A31-B577-CB890D0E001D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "春节7天练习题", "春节7天练习题\春节7天练习题.csproj", "{A40D6B93-BBAF-4197-9463-AB94C090C930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "常见题目", "常见题目\常见题目.csproj", "{5E515ED9-C48F-44F1-B7A9-549C3DD54A44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09FE3721-FADE-404D-A3B1-C31808226F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FE3721-FADE-404D-A3B1-C31808226F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FE3721-FADE-404D-A3B1-C31808226F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FE3721-FADE-404D-A3B1-C31808226F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD8E83E-2C3C-42A4-ADB1-0CB1E4758FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD8E83E-2C3C-42A4-ADB1-0CB1E4758FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD8E83E-2C3C-42A4-ADB1-0CB1E4758FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD8E83E-2C3C-42A4-ADB1-0CB1E4758FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B903DD-39A6-49B4-98E7-E54C4DACBAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B903DD-39A6-49B4-98E7-E54C4DACBAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B903DD-39A6-49B4-98E7-E54C4DACBAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B903DD-39A6-49B4-98E7-E54C4DACBAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810AFF4F-BBDF-4185-BE51-508968D3F19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810AFF4F-BBDF-4185-BE51-508968D3F19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810AFF4F-BBDF-4185-BE51-508968D3F19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810AFF4F-BBDF-4185-BE51-508968D3F19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A9F803-2C4E-47D1-A892-399F3763DAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A9F803-2C4E-47D1-A892-399F3763DAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A9F803-2C4E-47D1-A892-399F3763DAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A9F803-2C4E-47D1-A892-399F3763DAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9900DE0E-5F15-48D7-85F7-28103567D4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9900DE0E-5F15-48D7-85F7-28103567D4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9900DE0E-5F15-48D7-85F7-28103567D4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9900DE0E-5F15-48D7-85F7-28103567D4EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA66E36-4BBC-43F2-80CF-5FF818F34B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA66E36-4BBC-43F2-80CF-5FF818F34B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA66E36-4BBC-43F2-80CF-5FF818F34B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA66E36-4BBC-43F2-80CF-5FF818F34B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4AC3A16-273F-4DDE-B253-7168F0DE6F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4AC3A16-273F-4DDE-B253-7168F0DE6F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4AC3A16-273F-4DDE-B253-7168F0DE6F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4AC3A16-273F-4DDE-B253-7168F0DE6F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DD8B0F-5F44-4138-B463-2B4A0A19E94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DD8B0F-5F44-4138-B463-2B4A0A19E94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DD8B0F-5F44-4138-B463-2B4A0A19E94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DD8B0F-5F44-4138-B463-2B4A0A19E94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04601B1D-EA7E-4035-94E9-33444E89BB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04601B1D-EA7E-4035-94E9-33444E89BB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04601B1D-EA7E-4035-94E9-33444E89BB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04601B1D-EA7E-4035-94E9-33444E89BB55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317B7E86-3D15-40BC-ACD0-86A1585B3A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317B7E86-3D15-40BC-ACD0-86A1585B3A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317B7E86-3D15-40BC-ACD0-86A1585B3A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317B7E86-3D15-40BC-ACD0-86A1585B3A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC27161-E4D2-4A31-B577-CB890D0E001D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC27161-E4D2-4A31-B577-CB890D0E001D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC27161-E4D2-4A31-B577-CB890D0E001D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC27161-E4D2-4A31-B577-CB890D0E001D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40D6B93-BBAF-4197-9463-AB94C090C930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40D6B93-BBAF-4197-9463-AB94C090C930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40D6B93-BBAF-4197-9463-AB94C090C930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40D6B93-BBAF-4197-9463-AB94C090C930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E515ED9-C48F-44F1-B7A9-549C3DD54A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E515ED9-C48F-44F1-B7A9-549C3DD54A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E515ED9-C48F-44F1-B7A9-549C3DD54A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E515ED9-C48F-44F1-B7A9-549C3DD54A44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A407AB98-3946-49CE-A30E-DD313944F038}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sunyuliang321502.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 第一章引论\\第一章引论.csproj
+		SccProjectName1 = 第一章引论
+		SccLocalPath1 = 第一章引论
+		SccProjectUniqueName2 = 第二章算法分析\\第二章算法分析.csproj
+		SccProjectName2 = 第二章算法分析
+		SccLocalPath2 = 第二章算法分析
+		SccProjectUniqueName3 = 基本数据结构\\基本数据结构.csproj
+		SccProjectName3 = 基本数据结构
+		SccLocalPath3 = 基本数据结构
+		SccProjectUniqueName4 = 临时测试\\临时测试.csproj
+		SccProjectName4 = 临时测试
+		SccLocalPath4 = 临时测试
+		SccProjectUniqueName5 = 排序\\排序.csproj
+		SccProjectName5 = 排序
+		SccLocalPath5 = 排序
+		SccProjectUniqueName6 = 二分查找\\二分查找.csproj
+		SccProjectName6 = 二分查找
+		SccLocalPath6 = 二分查找
+		SccProjectUniqueName7 = 图遍历\\图遍历.csproj
+		SccProjectName7 = 图遍历
+		SccLocalPath7 = 图遍历
+		SccProjectUniqueName8 = 哈希表\\哈希表.csproj
+		SccProjectName8 = 哈希表
+		SccLocalPath8 = 哈希表
+		SccProjectUniqueName9 = 字符串匹配\\字符串匹配.csproj
+		SccProjectName9 = 字符串匹配
+		SccLocalPath9 = 字符串匹配
+		SccProjectUniqueName10 = 贪心算法\\贪心算法.csproj
+		SccProjectName10 = 贪心算法
+		SccLocalPath10 = 贪心算法
+		SccProjectUniqueName11 = 回溯算法\\回溯算法.csproj
+		SccProjectName11 = 回溯算法
+		SccLocalPath11 = 回溯算法
+		SccProjectUniqueName12 = 动态规划算法\\动态规划算法.csproj
+		SccProjectName12 = 动态规划算法
+		SccLocalPath12 = 动态规划算法
+		SccProjectUniqueName13 = 春节7天练习题\\春节7天练习题.csproj
+		SccProjectName13 = 春节7天练习题
+		SccLocalPath13 = 春节7天练习题
+		SccProjectUniqueName14 = 常见题目\\常见题目.csproj
+		SccProjectName14 = 常见题目
+		SccLocalPath14 = 常见题目
+	EndGlobalSection
+EndGlobal
