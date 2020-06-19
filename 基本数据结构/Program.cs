@@ -46,9 +46,10 @@ namespace 基本数据结构
             //cache.Add(new CacheData() { Key = "33", Value = "33" });
             //cache.Print();
 
-           
 
-
+            var intList = new int[] { 0, 1, 2, 9, 5, 7, 10, 11, 8 };
+            var heap = new Heap(intList);
+            heap.print();
 
             Console.ReadKey();
         }
