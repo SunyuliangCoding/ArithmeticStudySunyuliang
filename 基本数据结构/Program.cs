@@ -47,9 +47,14 @@ namespace 基本数据结构
             //cache.Print();
 
 
-            var intList = new int[] { 0, 1, 2, 9, 5, 7, 10, 11, 8 };
-            var heap = new Heap(intList);
-            heap.print();
+            //var intList = new int[] { 0, 33,25,17,19,8,6,4,9,7 };
+            //var heap = new Heap(intList);            
+            //heap.print();
+            //heap.insert(26);
+            //heap.Delete();
+            var intList = new int[] { 0,8,7,10,4,5,17};
+            new Heap(intList, true);
+
 
             Console.ReadKey();
         }
