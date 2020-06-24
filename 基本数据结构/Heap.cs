@@ -25,23 +25,34 @@ namespace 基本数据结构
         public Heap(int[] data, bool needInit)
         {
             this.a = data;
-            this.count = data.Length;        
+            this.count = data.Length;
             for (int i = count / 2; i >= 1; i--)
             {
-                var maxIndex = i * 2 ;
-                if ((i*2+1)<=count-1&&a[i*2]<a[i*2+1])
-                {
-                    maxIndex = i * 2 + 1;
-                }
-                if (a[maxIndex] > a[i])
-                {
-                    var min = a[i];
-                    a[i] = a[maxIndex];
-                    a[maxIndex] = min;
-                }
+                percolateDown(i);
             }
             this.print();
         }
+        //下滤，递归
+        private void percolateDown(int index )
+        {
+            //判断是否有子节点
+            var maxIndex = index * 2;
+            if (index * 2+1<=count-1&&a[index*2-1]>a[index])
+            {
+                maxIndex = index * 2 - 1;
+            }
+            if (a[maxIndex]>a[index])
+            {
+                var min = a[index];
+                a[index] = a[maxIndex];
+                a[maxIndex] = min;
+            }
+            if (maxIndex*2<=count-1)
+            {
+                percolateDown(maxIndex);
+            }
+        }
+
 
         //插入
         public void insert(int data)
