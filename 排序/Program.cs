@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using 基本数据结构;
 
 namespace 排序
 {
@@ -7,15 +8,36 @@ namespace 排序
     {
         static void Main(string[] args)
         {
-            int[] numbers = new int[] { 2, 5, 3, 4, 7, 1, 9, 0 };
+            int[] numbers = new int[] { 0, 2, 5, 3, 4, 7, 1, 9, 6 };
 
             // SelectSort(numbers);
-            QuickSort(numbers, 0, numbers.Length - 1);
-            foreach (var item in numbers)
+            //QuickSort(numbers, 0, numbers.Length - 1);
+            HeapSort(numbers);
+            //foreach (var item in numbers)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            Console.ReadKey();
+        }
+        //堆排序
+        private static void HeapSort(int[] numbers)
+        {
+            Heap p = new Heap(numbers, true);
+            var newNumbers = new List<int>();
+            while (true)
+            {
+                if (p.GetCount() == 0)
+                {
+                    break;
+                }
+                var data = p.Delete();
+                newNumbers.Add(data);
+            }
+            foreach (var item in newNumbers)
             {
                 Console.WriteLine(item);
             }
-            Console.ReadKey();
+
         }
         private static void insertSort(int[] numbers)
         {
@@ -166,7 +188,7 @@ namespace 排序
                 return;
             }
             var q = partition(numbers, p, r);
-            QuickSort(numbers, p, q-1);
+            QuickSort(numbers, p, q - 1);
             QuickSort(numbers, q + 1, r);
         }
         //获取分区点，并且把小的转移到左边，大的转移到右边
@@ -184,11 +206,11 @@ namespace 排序
                     i++;
                 }
             }
-                numbers[r] = numbers[i];
-                numbers[i] = pivot;
-            
+            numbers[r] = numbers[i];
+            numbers[i] = pivot;
 
-        
+
+
             return i;
         }
     }

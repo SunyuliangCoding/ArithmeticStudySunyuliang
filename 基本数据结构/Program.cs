@@ -52,7 +52,7 @@ namespace 基本数据结构
             //heap.print();
             //heap.insert(26);
             //heap.Delete();
-            var intList = new int[] { 0,8,7,10,4,5,17};
+            var intList = new int[] { 0, 2, 5, 3, 4, 7, 1, 9, 6 };
             new Heap(intList, true);
 
 

@@ -20,6 +20,10 @@ namespace 基本数据结构
             this.a = data;
             this.count = data.Length;
         }
+        public int GetCount()
+        {
+            return this.count;
+        }
         //堆初始化
         //遗留一个问题，这个堆化算法有问题，子节点不一定比页大，虽然堆顶是最大的
         public Heap(int[] data, bool needInit)
@@ -29,25 +33,26 @@ namespace 基本数据结构
             for (int i = count / 2; i >= 1; i--)
             {
                 percolateDown(i);
+                this.print();
             }
             this.print();
         }
         //下滤，递归
-        private void percolateDown(int index )
+        private void percolateDown(int index)
         {
             //判断是否有子节点
             var maxIndex = index * 2;
-            if (index * 2+1<=count-1&&a[index*2-1]>a[index])
+            if (index * 2 + 1 <= count - 1 && a[index * 2 - 1] > a[index])
             {
                 maxIndex = index * 2 - 1;
             }
-            if (a[maxIndex]>a[index])
+            if (a[maxIndex] > a[index])
             {
                 var min = a[index];
                 a[index] = a[maxIndex];
                 a[maxIndex] = min;
             }
-            if (maxIndex*2<=count-1)
+            if (maxIndex * 2 <= count - 1)
             {
                 percolateDown(maxIndex);
             }
@@ -81,9 +86,9 @@ namespace 基本数据结构
             this.print();
         }
         //删除堆顶的元素
-        public void Delete()
+        public int Delete()
         {
-
+            var indexData = a[1];
             var lastData = a[count - 1];
             a[count - 1] = 0;
             count--;
@@ -97,6 +102,7 @@ namespace 基本数据结构
             }
             a[index] = lastData;
             this.print();
+            return indexData;
 
         }
         private void expansion(int[] source)
