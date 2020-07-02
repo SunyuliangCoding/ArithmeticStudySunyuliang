@@ -22,7 +22,7 @@ namespace 基本数据结构
         }
         public int GetCount()
         {
-            return this.count;
+            return this.count-1;
         }
         //堆初始化
         //遗留一个问题，这个堆化算法有问题，子节点不一定比页大，虽然堆顶是最大的
@@ -42,9 +42,9 @@ namespace 基本数据结构
         {
             //判断是否有子节点
             var maxIndex = index * 2;
-            if (index * 2 + 1 <= count - 1 && a[index * 2 - 1] > a[index])
+            if (index * 2 + 1 <= count - 1 && a[index * 2 + 1] > a[index * 2])
             {
-                maxIndex = index * 2 - 1;
+                maxIndex = index * 2 + 1;
             }
             if (a[maxIndex] > a[index])
             {
@@ -104,6 +104,16 @@ namespace 基本数据结构
             this.print();
             return indexData;
 
+        }
+        public int NewDelete()
+        {
+            var indexData = a[1];
+            var lastData = a[count - 1];
+            a[1] = lastData;
+            a[count - 1] = 0;
+            count--;
+            percolateDown(1);
+            return indexData;
         }
         private void expansion(int[] source)
         {

@@ -52,8 +52,10 @@ namespace 基本数据结构
             //heap.print();
             //heap.insert(26);
             //heap.Delete();
-            var intList = new int[] { 0, 2, 5, 3, 4, 7, 1, 9, 6 };
-            new Heap(intList, true);
+            var intList = new int[] { 0, 3,1,2 };
+            var h=new Heap(intList);
+            h.Delete();
+
 
 
             Console.ReadKey();

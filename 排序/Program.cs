@@ -30,7 +30,8 @@ namespace 排序
                 {
                     break;
                 }
-                var data = p.Delete();
+                //    var data = p.Delete();
+                var data = p.NewDelete();
                 newNumbers.Add(data);
             }
             foreach (var item in newNumbers)
